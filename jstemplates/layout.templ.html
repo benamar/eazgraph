@@ -1,0 +1,34 @@
+<!-- #start layout.template -->
+<div id="id_templateContainer_{{:tableId}}" class="templateContainer">
+	<script>
+	{{if #data}}
+	//{{:~dbgTmpl(#data,"layout(tableId="+#data.tableId))}}
+	{{else}}
+	//{{:~errTmpl(#data,"undefined DATA layout template "))}}
+	{{/if}}
+
+	</script>
+	<div id="id_templateSubContainer_{{:tableId}}" class="templateSubContainer">
+		<div id="id_templateHeader_{{:tableId}}" class="templateHeader">
+			{{for toolBar }}
+			{{include tmpl=template/}}
+			{{/for}}
+			{{for topFrame tmpl="refHtmlTable"/}}
+		</div><!-- #templateHeader -->
+		<div id="id_templateBody_{{:tableId}}" class="templateBody">
+			<div id="id_templateLeftSide_{{:tableId}}" class="templateLeftSide">
+				{{for leftFrame tmpl="refHtmlTable"/}}
+			</div><!-- #templateLeftSide-->	
+			<div id="id_templateCenter_{{:tableId}}" class="templateCenter">
+				{{for centerFrame tmpl="refHtmlTable"/}}
+				{{for centerFrame2 tmpl="refHtmlTable"/}}
+			</div><!-- #templateCenter-->
+			
+			<div id="id_templateRightSide_{{:tableId}}"  class="templateRightSide">
+					{{for rightFrame tmpl="refHtmlTable"/}}
+			</div><!-- #templateRightSide -->
+
+		</div><!-- #templateBody -->
+	</div><!-- #templateSubContainer -->
+</div><!-- #templateContainer-->
+<!-- #end layout.template -->

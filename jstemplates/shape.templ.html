@@ -1,0 +1,153 @@
+<!-- start shapes -->
+							{{if INPUTS}}
+								<div class="inputs" >
+									{{for INPUTS}}
+										<div class="input" style="{{if KIND}}background:url(images/shapes/File_{{>KIND}}.png) no-repeat center left{{/if}}">
+											<div class="tooltipPlace">
+												<div class="triangle-border left tooltip">
+												<h2>
+												{{if TITLE_DESC}}
+													{{>TITLE_DESC}}
+												{{else}}
+													{{>TITLE}}
+												{{/if}}
+
+												</h2>
+												<div class='tooltipclose'>X</div>
+													
+												<div style="width:100%">
+													{{if ACTIONS}}
+														{{for ACTIONS}}
+															<button type="submit" onclick="javascript:{{for ~wsDialogCall(#data)}}('{{>call}}');{{/for}}" > {{>TITLE}}</button>
+														{{/for}}
+													{{/if}}
+												</div>
+												
+												<h3>Description : </h3>
+												{{if TOOLTIP}}
+													<TABLE>
+													{{for ~getFormattedFields(TOOLTIP)}}
+														<tr >
+														 	<td><b>{{>key}}</b>:</td><td> {{>value}}</td>
+														 </tr>
+													{{/for}}
+													</TABLE>
+													<br>-----
+													~getFormattedFields(TOOLTIP)['__MULTI_TABLE__ ']
+													{{if  ~getFormattedFields(TOOLTIP)['__MULTI_TABLE__ ']}}
+														<br>
+														_______
+														<br>
+														<TABLE>
+															{{for ~getFormattedFields(TOOLTIP.__MULTI_TABLE__ )}}
+																<tr >
+																	<td><b>{{>key}}</b>:</td><td> {{>value}}</td>
+																 </tr>
+															{{/for}}
+													{{/if}}
+													
+												{{/if}}
+												</div>
+											</div>
+										<p>{{>TITLE}}</p>
+										</div>
+									{{/for}}
+								</div>
+							{{/if}}
+							<div  class="content">
+								<img src="{{if SHAPE}}images/shapes/chart_{{>SHAPE}}.png{{/if}}" class="imgBack">
+								<div class="taskBarTool">
+									<div class="tooltipPlace">
+										<div class="triangle-border left tooltip">
+											<h2>
+											{{if TITLE_DESC}}
+												{{>TITLE_DESC}}
+											{{else}}
+												{{>TITLE}}
+											{{/if}}
+											</h2>
+											<div class='tooltipclose'>X</div>
+											<div style="width:100%">
+												{{if ACTIONS}}
+													{{for ACTIONS}}
+														<button type="submit" onclick="" > {{>TITLE}}</button>
+													{{/for}}
+												{{/if}}
+											</div>
+											<h3>Description 3: </h3>
+											<div class="tooltiptabs" style="max-height: 500px; overflow: auto;">
+												{{if TOOLTIP}}
+													{{if TOOLTIP.length>1}}
+														<ul>
+															{{for TOOLTIP}}
+																<li><a href="#tooltiptabs{{>#parent.data.UID}}-{{>#index}}">{{>TITLE$}}</a></li>
+															{{/for}}
+														</ul>
+													{{/if}}
+												{{/if}}
+												{{for TOOLTIP}}
+													<div id="tooltiptabs{{>#parent.data.UID}}-{{>#index}}">
+														{{include tmpl="tooltip"/}}
+													</div>
+												{{/for}}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style="width:100%;left:10%;bottom:30px;position:relative;display:none">
+									<input type="submit" value="Acquitter" />
+								</div>
+							
+							
+							</div>
+							{{if OUTPUTS}}
+								<div  class="outputs">
+									{{for OUTPUTS}}
+										<div class="input" style="{{if KIND}}background:url(images/shapes/File_{{>KIND}}.png) no-repeat top left{{/if}}">
+											<div class="tooltipPlace">
+												<div class="triangle-border left tooltip">
+												<h2>
+												{{if TITLE_DESC}}
+													{{>TITLE_DESC}}
+												{{else}}
+													{{>TITLE}}
+												{{/if}}
+												</h2>
+												<div class='tooltipclose'>X</div>
+												
+												<div style="width:100%">
+												<input type="submit" value="télécharger le fichier" />
+												</div>
+												<h3>Description2 : </h3>
+												{{if TOOLTIP}}
+													<br>-----
+													~getFormattedFields(TOOLTIP)['__MULTI_TABLE__ ']
+													<br>
+													<TABLE>
+													{{for ~getFormattedFields(TOOLTIP)}}
+														<tr >
+														 	<td><b>{{>key}}</b>:</td><td> {{>value}}</td>
+														 </tr>
+													{{/for}}
+													</TABLE>
+													{{if  ~getFormattedFields(TOOLTIP)['__MULTI_TABLE__ ']}}
+														<br>
+														_______
+														<br>
+														<TABLE>
+															{{for ~getFormattedFields(TOOLTIP.__MULTI_TABLE__ )}}
+																<tr >
+																	<td><b>{{>key}}</b>:</td><td> {{>value}}</td>
+																 </tr>
+															{{/for}}
+													{{/if}}
+													
+												{{/if}}
+												</div>
+											</div>
+										<p>{{>TITLE}}</p>
+										</div>
+									{{/for}}
+								</div>
+							{{/if}}
+<!-- end shapes -->

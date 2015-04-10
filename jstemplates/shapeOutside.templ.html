@@ -1,0 +1,51 @@
+<!-- start shapeOustside.templ.html  -->
+					
+					{{if UPDATABLE}}
+						<img class="contentLoadImg" src="images/Button-Add-icon.png" style="" onclick="loadShape('{{>UID}}',this,'{{>NODETYPE}}')"/>
+					{{/if}}
+		
+					<img src="{{if SHAPE}}images/shapes/chart_{{>SHAPE}}.png{{/if}}" class="imgFirstBack" >
+					
+					<div  class="shapes">
+						<!-- start shapes in shapeOutside.templ.html -->
+							<div class="normalShape">
+							<div  class="shape">
+							{{include tmpl="shape"/}}
+							</div>
+							</div>
+						<!-- end shapes -->
+						{{for HISTORY }}
+							<div class="normalShape">
+							<div  class="shape historyShape">
+								{{include tmpl="shape"/}}
+							</div>
+							</div>
+						{{/for}}
+					</div>
+					
+					<div class="titleBar" >
+						{{if HISTORYCOUNT}}
+							<div class="shapeTitle">
+								{{>TITLE}} 
+								(
+								<span class="histotitle"> historique  </span>   
+								<span class="currentCount">0</span>  
+								<span class="histotitle">/</span> 
+								<span class="historyCount">{{>HISTORYCOUNT}}</span>
+								<span class="histotitle"></span>
+								) 
+							</div>
+							<img src="images/previous-icon-16.png" class="arrowPrev" >
+							<img src="images/next-icon-16.png" class="arrowNext" >
+						{{else}}
+							<div class="shapeTitle">
+								{{>TITLE}} 
+							</div>
+						{{/if}}
+							
+					</div>
+					{{if TITLE_BOTTOM}}
+					<div class='bottomTitle'>{{>TITLE_BOTTOM}}</div>
+					{{/if}}					
+<!-- end of shapeOustside -->
+

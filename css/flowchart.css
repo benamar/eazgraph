@@ -1,0 +1,651 @@
+
+
+
+.openedShape {
+
+}
+
+.parentShape {
+	position: relative;
+	float: left;
+	display: inline;
+	top:0px;
+	width:auto;
+	height:auto;
+	padding: 10px 10px 20px 10px;
+}
+
+
+
+.full{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+
+.infull{
+	position:relative;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+}
+
+.imgBack{
+	width:100%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+.imgFirstBack{
+	position: relative;
+	float: left;
+	z-index: 0;
+	width: 78px;
+	height: 60px;
+	padding-top: 5px;
+	display: block;
+	margin-left: 10%;
+}
+.openedShape .imgFirstBack{
+	display:none;
+}
+
+.imgMaximize{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 15px;
+	height: 15px;
+	display: block;
+}
+
+.openedShape .imgMaximize{
+	display:none;
+}
+
+.imgMinimize{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	height: 20px;
+	display:none;
+}
+
+.openedShape .imgMinimize{
+	display:block;
+}
+
+
+
+.bigTitle{
+	width:100%;
+	left:0px;
+	top:0px;
+	height:30px;
+	padding: 1px 2px 5px 1px;
+	text-align: center;
+}
+
+
+.titleBar {
+	position: absolute;
+	float: left;
+	top: -16px;
+	left: 1%;
+	width: 101%;
+	max-width: 90%;
+	height: auto;
+}
+
+.openedShape .titleBar {
+	max-width: 99%;
+}
+.arrowPrev{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	display:none;
+}
+
+.arrowNext{
+	position:absolute;
+	top: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	right:10px;
+	display:none;
+}
+
+.openedShape .arrowPrev{
+	display:block;
+}
+
+.openedShape .arrowNext{
+	display:block;
+}
+
+.shapeTitle {
+	position: relative;
+	width: 100%;
+	float: left;
+	left: 0px;
+	top: 0px;
+	font-size: 12px;
+	height: 16px;
+	text-align: center;
+	word-wrap: break-word;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #EBF0DC;
+}
+
+.blockTitle{
+	position:relative;
+	float: left;
+	left:0px;
+	top:0px;
+	height:16px;
+	width: 99%;
+	padding: 1px 2px 5px 1px;
+	text-align: center;
+	word-wrap: break-word;
+	font-size: 10px;
+	border-radius: 9px / 21px;
+	width: 110%;
+	box-shadow: 1px 1px 5px rgba(103, 163, 1, 0.5);
+	margin-left: -2%;
+}
+
+
+.bottomTitle {
+	position: absolute;
+	bottom: -16px;
+	left: 3%;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	word-wrap: break-word;
+	font-weight: bold;
+	font-size: 10px;
+	width: 94%;
+}
+
+.blockTitle span {
+	text-wrap:none!important;
+}
+
+.openedShape .blockTitle {
+	width: 103%;
+	max-width: 102%;
+	font-weight: bold;
+	font-size: 13px;
+	min-width: 100px;
+	margin-left: -1%;
+	margin-right: auto;
+	padding-top: 5px;
+}
+.currentCount{
+	padding:1px;
+	display: none;
+}
+
+.histotitle{
+	display: none;
+	padding:1px;
+}
+.historyCount{
+	background:blue;
+	color:white;
+	padding: 0px 3px 0px 2px;
+	-webkit-border-radius: 10px / 16px;
+	-moz-border-radius:    10px / 16px; 
+	border-radius:         10px / 16px; 
+}
+.openedShape .histotitle{
+	display: inline;
+}
+.openedShape .currentCount{
+	display: inline;
+}
+.graph{
+	position: relative;
+	float:left;
+	left:0px;
+	padding:10px 10px 30px 10px;
+	height: auto;
+	width: 100%;
+}
+.outsideShapesGroup{
+	position: relative;
+	float: left;
+	display: inline;
+	top:0px;
+	height:auto;
+	padding:1px 20px 1px 20px;
+	width:auto;
+}
+.shapesGroup{
+	position: relative;
+	float: left;
+	display: inline;
+	top:0px;
+	height:auto;
+	padding:2px 2px 2px 1px;
+	width:auto;
+	border:dashed 2px orange;
+	margin: 7px;
+	
+}
+
+
+.shape{
+	position: relative;
+	top:0px;
+	padding: 1px 10px 2px 10px;
+	display:none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.openedShape .shape{
+	display:block;
+}
+
+.historyShape{
+	position: absolute;
+	float: left;
+	top:20px;
+	display:none;
+	background:#E1F0EE;
+}
+
+.openedShape .shape.historyShape{
+	display:none;
+}
+
+.newShapeLeft{
+}
+
+.openedShape .newShapeLeft .shape{
+	display:block;
+	position:relative;
+	left:100%;
+	top:10px;
+}
+
+.newShapeRight{
+}
+
+.openedShape .newShapeRight .shape{
+	display:block;
+	position:relative;
+	left:-100%;
+	top:10px;
+}
+
+.oldShape{
+}
+
+.openedShape .oldShape .shape{
+	display:block;
+	position:absolute;
+	left:0px;
+	top:10px;
+}
+
+.hiddenShape{
+}
+
+.openedShape .hiddenShape .shape{
+	display:none;
+	position:absolute;
+	left:0px;
+	top:10px;
+}
+
+
+.shapes{
+	position: relative;
+	padding: 1px 10px 2px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.dispNone{
+	display:none;
+}
+
+.dispBlock{
+	display:block;
+}
+
+
+
+.shapeOutside{
+	position: relative;
+	float: left;
+	display: inline;
+	top:0px;
+	width:auto;
+	min-width:120px;
+	min-height:70px;
+	max-width: 130px;
+	height:auto;
+	padding: 3px 10px 5px 10px;
+	
+	border:3px solid #5a8f00;
+	color:#333;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	box-shadow: 2px 2px 6px rgba(90, 143, 0, 0.56);
+	
+}
+.openedShape .shapeOutside{
+	max-width: 100%;
+}
+
+.shapeOutside:hover {
+	background: none;
+	box-shadow: 12px 12px 16px rgba(209, 235, 19, 0.5);
+}
+
+.content{
+	position: relative;
+	float: left;
+	display: inline;
+	top:0px;
+	width:100px;
+	height:90px;
+}
+
+.inputs{
+	position: relative;
+	float: left;
+	display: inline;
+	top: 0px;
+	max-width: 500px;
+	height:auto;
+	padding: 0px 15px 1px 1px;
+	background: url(../images/input_filter.png) no-repeat center right;
+	
+}
+
+
+.outputs{
+	position: relative;
+	float: left;
+	display: inline;
+	top: 0px;
+	max-width: 500px;
+	height:auto;
+	padding: 0px 0px 1px 30px;
+	background: url(../images/input_filter.png) no-repeat center left;
+}
+
+.input{
+	position: relative;
+	float: left;
+	display: inline;
+	top:0px;
+	height: auto;
+	width:150px;
+	padding: 2px 1px 0px 2px;
+	background: url(../images/Text_File.png) no-repeat top left;
+}
+
+.input p {
+	word-wrap: break-word;
+	top: -10px;
+	left: 35px;
+	width:110px;
+	position: relative;
+	width: 110px;
+}
+
+
+
+.parentShape:hover{
+	position:relative;
+	height:auto;
+	width:auto;
+}
+
+/*
+.parentShape:hover .shape{
+	display:block;
+}
+
+.parentShape:hover .imgFirstBack{
+display:none;
+}
+.parentShape:hover .cont1{
+	left:50%;
+	top:-10%;
+}
+
+.parentShape:hover .blockTitle{
+	font-size: 12px;
+	font-weight: bold;
+	background:none
+}
+*/
+
+
+.titlepanel{
+	position:absolute;
+	vertical-align:middle;
+	top:5%;
+	left:2%;
+	width:70%;
+	height:auto;
+	
+}
+
+.taskBarTool{
+	position:absolute;
+	top:40%;
+	left:30%;
+	margin:auto;
+}
+
+.title{
+	color:#260E29;
+	position:relative;
+	vertical-align:middle;
+	top:20%;
+	width:120px;
+	text-align: center;
+	padding:10px 10px 2px 2px;
+	
+}
+
+.shapeBtns{
+	position:absolute;
+	vertical-align:middle;
+	bottom:15%;
+	left:10%;
+	width:80%;
+	height:auto;
+	text-align: center;
+}
+.btn{
+	color:#260E29;
+	position:relative;
+	float:left;
+	width:auto;
+	text-align: center;
+	border:solid 1px;
+	height:11px;
+}
+
+.tooltip{
+	position:absolute;
+	display:none;
+	z-index:100;
+	opacity:1;
+	width:500px;
+	left: 20px;
+	top: -15px;
+}
+.docked{
+	display:block;
+}
+
+.tooltipPlace{
+	position:absolute;
+	width: 35px;
+	height: 25px;
+	top:0px;
+	left:13px;
+	background: url(../images/info.png) no-repeat center center;
+	background:grey solid;
+}
+.tooltipclose {
+	border: 2px solid;
+	border-color: #528F5E;
+	border-radius: 6px;
+	position: absolute;
+	display: block;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	right: 0px;
+	top: 0px;
+	padding: 4px 6px;
+	background: #7AB95A;
+	color: #F5F3F8;
+	cursor: pointer;
+}
+
+
+
+
+.InfoItem{
+ width:300px;
+}
+
+.shapeBorder{
+	border: solid 2px;
+	border-bottom: solid 20px;
+	border-top: solid 20px;
+}
+
+.blueBorder {
+	border: solid blue 2px;
+	border-bottom: solid blue 20px;
+}
+
+.yellowBorder {
+	border: solid yellow 2px;
+	border-bottom: solid yellow 20px;
+}
+
+
+.redBorder {
+	border: solid red 2px;
+	border-bottom: solid red 20px;
+}
+.greenBorder{
+	border: solid green 2px;
+	border-bottom: solid green 20px;
+}
+.orangeBorder{
+	border: solid orange 2px;
+	border-bottom: solid orange 20px;
+}
+
+
+.grayBorder{
+	border: solid gray 2px;
+	border-bottom: solid gray 20px;
+}
+
+/*
+.fullGraph{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:30px;
+}
+
+.miniGraph{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:30px;
+}
+
+.insideGraph:hover{
+	width:100%;
+	height:100%;
+}
+
+.insideGraph:hover ~ .outsideShapesGroup .shapesGroup .parentShape .shapeOutside .imgFirstBack{
+	display:none;
+}
+
+.insideGraph:hover ~ .outsideShapesGroup .shapesGroup .parentShape .shapeOutside .shape{
+	display:block;
+}
+
+.insideGraph:hover .parentShape:hover ~ .outsideShapesGroup .shapesGroup .parentShape .shapeOutside .shape{
+	display:block;
+
+.parentShape ~ .parentShape .shapeOutside .imgMaximize{
+	background:blue;
+}
+
+}
+
+
+*/
+
+
+
+.graph table {
+	width:90%;
+	border-top:1px solid #e5eff8;
+	border-right:1px solid #e5eff8;
+	margin:1em auto;
+	border-collapse:collapse;
+	}
+
+.graph td {
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.3em 1em;
+	text-align:center;
+	max-width: 140px;
+	word-wrap: break-word;
+}
+	
+.graph td:first-child {
+	text-align:left;
+}
+.graph tr:nth-child(even) {background: #fff}
+.graph tr:nth-child(odd) {background: #f7fbff}
+
+.contentLoadImg{
+	position:absolute;
+	top:-1px;
+	left:-1px;
+	width:20px;
+}
+	

@@ -1,0 +1,29 @@
+
+<div class="graph">
+	<div class="bigTitle"><h2>{{>TITLE}}</h2></div>
+	{{for GROUPS}}
+	<div  class="outsideShapesGroup {{>GROUPCLASS}}">
+	<div  class="shapesGroup" id="{{>UID}}_id">
+		<div class="float " style="width:100%;text-align: center;">{{>TITLE}}</div>
+		<!-- start for NODES  -->
+		{{for NODES}}
+			<div  class="parentShape {{>NODECLASS}}" >
+				<!-- start shapeOutside shapeBorder div {{>UID}}_id -->
+				<div  id="{{>UID}}_id" class="{{>CSS_SHAPE}} shapeOutside shapeBorder" 
+					style="border-color: {{>BORDER}};{{if INPUTS}}background: url(images/info.png) no-repeat;{{/if}}" 
+					title="{{>TITLE_DESC}}" 
+					>
+					{{if UPDATABLE}}
+						<img class="contentLoadImg" src="images/Button-Add-icon.png" style="" onclick="loadShape('{{>UID}}',this,'{{>NODETYPE}}')"/>
+					{{/if}}
+						{{include tmpl="shapeOutside"/}}
+				</div>
+				<!-- end shapeOutside shapeBorder div -->
+			</div>
+		{{/for}}
+		<!-- end of for NODES-->
+	</div>
+	</div>
+	{{/for}}
+</div>
+

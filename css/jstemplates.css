@@ -1,0 +1,742 @@
+
+.clearfix:after {
+    content: ".";
+	content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}  /* for IE/Mac */
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.newBlock{
+	display:block;
+	width:1px;
+	height:1px;
+}
+.float,.lfloat{
+position: relative;
+display: block;
+float: left;
+}
+.floatRight,.rfloat{
+position: relative;
+display: block;
+float: right;
+}
+
+
+.full{
+width:100%;
+}
+.CR{
+	clear: left;
+	height:auto;
+}
+.CF{
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.LC{
+	margin-top: 5px;
+	border-top: 1px solid #F5F5DC;
+}
+
+selectInp{
+border: 1px solid #5897FB;
+outline: none;
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.LF{
+	margin-bottom: 5px;
+	border-bottom: 1px solid #F5F5DC;
+}
+
+.refField{
+	clear: left;
+	margin-bottom: 2px;
+	margin-top: 1px;
+	position: relative;
+	display: block;
+	float: left;
+}
+.refHField{
+	max-width: 250px;
+	margin-bottom: 2px;
+	margin-top: 1px;
+	position: relative;
+	display: block;
+	float: left;
+	padding-left: 5px;
+	clear: none;
+}
+
+.refTab{
+	display:inline-block;
+	max-height:24px;
+}
+
+.refImgIcon{
+	display:inline-block;
+	position: relative;
+	float: left;
+	clear:left;
+	display:inline-block;
+}
+.ui-tabs .ui-tabs-nav li a {
+float: left;
+padding: 3px 3px;
+}
+
+.tabMaintenance{
+	background:transparent url(/media/images/tools.png) no-repeat 0 0;
+	background-position: left center;
+	padding-left: 32px!important;
+}
+.tabSupervision{
+	background:transparent url(/media/images/camera.png) no-repeat 0 0;
+	background-position: left center;
+	padding-left: 32px!important;
+}
+
+.tabAliasDns{
+	background:transparent url(/media/images/DNS.png) no-repeat 0 0;
+	background-position: left center;
+	padding-left: 32px!important;
+}
+
+.tabAix{
+	background:transparent url(/media/images/aix.png) no-repeat 0 0;
+}
+.tabSettings{
+	background:transparent url(/media/images/server-icon.png) no-repeat 0 0;
+}
+
+.tabBackup{
+	background:transparent url(/media/images/backup.png) no-repeat 0 0;
+}
+.tabApplications{
+	background:transparent url(/media/images/settingApplications.png) no-repeat 0 0;
+}
+.tabComposants{
+	background:transparent url(/media/images/process-add-icon.png) no-repeat 0 0;
+}
+.tabFlux{
+	background:transparent url(/media/images/flux.png) no-repeat 0 0;
+}
+.tabAix,.tabSettings,.tabBackup,.tabApplications,.tabComposants,.tabFlux{
+	background-position: left center;
+	padding-left: 36px!important;
+}
+
+
+.refLabelField{
+	display:inline-block;
+	float: left;
+	clear:left;
+	min-height:10px;
+	min-width:100px;
+	max-width:100px;
+	display:inline-block;
+	position: relative;
+	font-weight: bold;
+}
+.refHField .refLabelField{
+	min-width:50px;
+	position: relative;
+	display: block;
+	float: left;
+	
+}
+.refHField .refFieldValue, .refHField .rendredButton{
+	clear: both;
+}
+
+.refFieldValue,.refFieldFixedValue{
+	margin: 0px 10px 1px 3px;
+	min-height:10px;
+	min-width:50px;
+	display:inline-block;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	float: left;
+}
+.refFieldFixedValue{
+	padding: 5px;
+	background: #F3F3E8;
+	position: relative;
+	display: block;
+	float: left;
+	max-width: 200px;
+	word-break: break-all;
+	min-width: 100px;
+}
+.refFieldValue{
+	border: 1px solid #F3C5BC;
+	background: #F3F8F8;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(6, 14, 31, 0.35);
+	padding: 5px;
+	position: relative;
+	display: block;
+	float: left;
+	line-height: 17px;
+	max-width: 200px;
+	word-break: break-word;
+	min-width: 100px;
+}
+
+.refFieldValue  input{
+	min-width:150px;
+}
+
+.refTextFieldValue{
+	border: 1px solid #F1EDED;
+	margin: 0px 10px 1px 3px;
+	min-height:40px;
+	min-width:240px;
+	display:inline-block;
+	border: 1px dashed #E4EEE2;
+	max-width: 130px;
+	border-radius: 5px;
+	box-shadow: 1px 5px 15px rgba(6, 14, 31, 0.35);
+	padding: 5px;
+	background: #F3F8F8;
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.refTextField
+.refFieldValue{
+	border: 1px solid #F1EDED;
+	margin: 0px 10px 1px 3px;
+	min-height:40px;
+	min-width:240px;
+	display:inline-block;
+	border: 1px dashed #E4EEE2;
+	max-width: 130px;
+	border-radius: 5px;
+	box-shadow: 1px 5px 15px rgba(6, 14, 31, 0.35);
+	padding: 1px;
+	background: #F3F8F8;
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.refTextFieldValue  input{
+	font-size: 11px!important;
+}
+.refTitleBlock .refLabelField{
+	font-size:14px;
+	width:150px;
+}
+.refTitleBlock .refFieldValue{
+	font-size:22px;
+	width:100px;
+}
+
+.jsBlock{
+	border: 1px solid #DBD0D0;
+	margin: 2px 10px 1px 10px;
+}
+.jsGroup{
+	height:auto;
+}
+.jsMainGroup{
+	min-width: 300px;
+	margin: 2px 10px 1px 10px;
+	height:auto;
+	min-height: 130px;
+}
+.blockTitle{
+	width:99.5%;
+	text-align:center;
+	clear: left;
+	height:auto;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:5px;
+	padding-top: 5px;
+	background:beige;
+	border-bottom:1px solid #76E25C;
+}
+
+.jsheader{
+width: 100%;
+border-bottom: 2px solid #A8A87C;
+border-top: 22px solid #A6ACBD;
+background: #BFDEEC;
+border-radius: 5px;
+box-shadow: 1px 5px 15px rgba(6, 14, 31, 0.35);
+}
+
+.refField,.refLabelField,.jsBlock,.jsbody{
+	position:relative;
+	padding: 3px;
+}
+
+
+
+.refLeftArrow{
+	background:transparent url(/media/images/previous-icon-24.png) no-repeat 0 0;
+	background-position: left center;
+}
+.refRightArrow{
+	background:transparent url(/media/images/next-icon-24.png) no-repeat 0 0;
+	background-position: left center;
+}
+
+.refLeftArrow,.refRightArrow{
+	border: 1px solid #DBD0D0;
+	margin: 2px 10px 1px 10px;
+	padding-left:35px;
+	padding-bottom:35px;
+	margin-top: 12px;
+}
+
+.barContainer
+{
+	margin-left:50px;
+}
+
+.diapoContainer
+{
+}
+.verticalDiapo{
+	
+}
+
+.refDiapo{
+	margin: 2px 5px 1px 5px;
+	padding:3px;
+	cursor: pointer;
+	
+}
+
+.horizontalDiapo .barContainer
+{
+	
+}
+
+.verticalDiapo .refDiapo{
+	clear: left;
+	width:90%;
+	height:auto;
+}
+
+.barContainer.verticalDiapo
+{
+	max-height: 1010px;
+	overflow-y: scroll;
+	
+}
+
+.verticalDiapo .diapoContainer{
+	clear:left;
+	margin-top: 15px;	
+	border-radius: 5px;
+	max-height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	min-width: 170px;
+}
+
+.refImgDiapo{
+	height:50px;
+	width:50px;
+}
+
+.verticalDiapo .refImgDiapo{
+	height:18px;
+	width:18px;
+}
+
+.refDiapoTitleDesc{
+}
+
+.verticalDiapo .refDiapoTitleDesc{
+	display:inline-block;
+	position:relative;
+
+	margin-left: 28px;
+	margin-right: auto;
+	padding: 1px;
+	clear: left;
+	float: left;
+}
+._____verticalDiapo .diapoContainer:hover .refDiapoTitleDesc{
+	display:inline-block;
+	position:relative;
+
+	margin-left: 28px;
+	margin-right: auto;
+	padding: 1px;
+	clear: left;
+	float: left;
+}
+
+.refImgDiapo,.refDiapoTitle{
+	display:block;
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width: 100px;
+	color: #00F;
+	font-size: 12px;
+}
+
+.__verticalDiapo .diapoContainer:hover .refDiapoTitle{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width: 100px;
+	color: #00F;
+}
+.verticalDiapo .refDiapo:hover {
+	background:#DFEDF8;
+}
+.verticalDiapo .refImgDiapo,.verticalDiapo .refDiapoTitle{
+	float:left;
+}
+.selectedDiapo{
+	border: 2px solid #555;
+}
+.verticalDiapo .selectedDiapo{
+	border: 1px solid #869150;
+	border-radius: 5px;
+	box-shadow: 2px 5px 15px rgba(6, 14, 31, 0.35);
+	font-size: 13px;
+	padding: 5px;
+	background: #71BBF5;
+}
+
+.selectedDiapo .refImgDiapo{
+	width:20px;
+	height:20px;
+
+}
+.selectedDiapo .refDiapoTitle{
+	text-align: center;
+	padding-bottom: 3px;
+	padding-top: 2px;
+	font-weight: bold;
+}
+
+.refTitleBlock{
+	margin-right:20px;
+	margin-left:30%;
+}
+
+.rendredButton{
+}
+
+.jsbody{
+	width: 98.9%;
+}
+.jsBlock,.refTitleBlock,.refDiapo,.jsGroup,.jsTabGroup,.jsMainGroup,.CR,.blockTitle,.jsbody,.jsheader,.diapoContainer,.barContainer,.refLeftArrow,.refRightArrow,.rendredButton{
+	display:block;
+	position:relative;
+	float:left;
+}
+.jsTabGroup{
+	width: 99.8%;
+	padding: 0px;
+	border: 0px;
+}
+.dataHeader{
+	width: auto;
+	clear: both;
+	border-width: medium;
+	border-bottom-color: darkturquoise;
+	border: 1px solid;
+	padding: 5px;
+	border-radius: 17px;
+	border-color: #BBC3CA;
+	box-shadow: 3px 3px 2px rgba(148, 158, 180, 0.35);
+}
+
+
+.verticalDiapo .refLeftArrow,.verticalDiapo .refRightArrow{
+	display:none;
+}
+.jsTabGroup .ui-widget-header {
+	background: #C1DFF6;
+	border: 1px solid;
+	border-color: #C1DFF6;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	padding-left: 0px;
+}
+
+.ui-datepicker{
+	z-index:1000!important;
+}
+
+/*border: 4px solid #CDCDDB;*/
+
+.groupBorder{
+	border:5px solid #A3D4FA;
+	position:relative;
+	display:block;
+	float:left;
+	padding:3px;
+	border-radius: 6px;
+	margin:2px;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.bottomBorder{
+width: 95%;
+clear:both;
+border-bottom: 1px solid lightblue;
+margin-bottom: 5px;
+}
+
+.TabTitle{
+	font-size:15px;font-weight:bold;margin:10px
+}
+
+.middleFont{
+	font-size:12px;margin:10px
+}
+.bold{
+	font-weight:bold;
+}
+
+.linenborder{
+	border: 1px solid #76E25C;
+	padding: 10px;
+	margin: 5px;
+	background:linen;
+}
+.boxshadow{
+	box-shadow: 9px 12px 31px rgba(6, 14, 31, 0.35);
+}
+
+.dialogFieldGroup{
+	height: 36px;
+	width: 180px;
+	display: block;
+	//border-right: 1px solid #76E25C;
+}
+.refDialogTitle{
+	background : #E07E47;
+	color:white;
+	height:20px;
+	width:100%;
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.dialogField{
+	position:fixed;
+	display:none;
+	float:left;
+	border-radius: 6px;
+	margin:2px;
+	border: 5px solid #E07E47;
+	background: #D6E2CD;
+	overflow: auto;
+	box-shadow: 9px 12px 31px rgba(6, 14, 31, 0.35);
+	z-index: 100;
+	top: 150px;
+	left: 200px;
+	width:85%;
+	min-width: 800px;
+	min-height: 350px;
+}
+.errors{
+	color: #F00;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+}
+.errorfield {
+	border: 2px solid #F00;
+}
+
+.dialogField .dataTables_wrapper{
+	width: 1100px;
+	overflow-x: auto;
+	margin: 10px;
+	max-height: 350px;
+}
+ainput, atextarea {   
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    }  
+
+textarea {   
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    }  
+  
+.GlobalSubmit {
+	
+}
+
+.GlobalSubmit .editableSubmit{
+	display:none;
+}
+
+.GlobalSubmit .editableCancel{
+	display:none;
+}
+
+.GlobalSubmit .refFieldValue {
+	min-width: 181px;
+}
+
+.GlobalSubmit .refFieldValue .editableCancel
+{
+	display:none;
+}
+
+.GlobalSubmit .refFieldValue .editableSubmit
+{
+	display:none;
+}
+
+.GlobalSubmit .tablebox .editableSubmit {
+display: block;
+}
+.GlobalSubmit .tablebox .editableCancel{
+display: block;
+}
+
+.select2-container{
+	max-width:300px;
+}
+
+.working{
+	cursor: progress;
+}
+
+.tmplEdit{
+	display:none;
+}
+
+.tmplEditActive.tmplEdit{
+	display:block;
+}
+
+.tmplTools{
+	height:30px;
+	width:200px;
+	background:gray;
+}
+
+.draggable{
+}
+
+.templateName{
+	background:brown;
+	color:white;
+	word-wrap: break-word;
+	max-width:200px;
+	
+}
+
+
+
+.templateContainer{
+	width:100%;
+}
+
+.templateSubContainer{
+	margin-left:auto;
+	margin-right:auto;
+	min-width: 1800px;
+}
+
+.templateHeader {
+	clear: left;
+	clear: right;
+	width:100%;
+}
+
+
+/* Bloc central */
+.templateCenter {
+	
+}
+.templateLeftSide {
+	max-width: 20%;
+	//width: 20%;
+}
+
+.templateRightSide {
+	float:right;
+	clear:right;
+	max-width: 20%;
+}
+
+.templateBody{
+	margin-left:auto;
+	margin-right:auto;
+	//width:100%;
+	//border:1px dotted red;
+}
+
+
+.templateContainer, .templateHeader , .templateBody, .templateCenter , .templateLeftSide, .templateRightSide, .templateBloc {
+	position: relative;
+	display:block;
+	float: left;
+	padding: 3px 3px;
+}
+
+.selectedvalue{
+}
+
+
+.groupInfobox{
+	position: relative;
+	width: 1px;
+	left: -5px;
+	background: yellowgreen;
+	height: 1px;
+	display: inline;
+	float: left;
+}
+
+.cls_TextField,.GlobalSubmit .refFieldValue.cls_TextField{
+	min-height:80px;
+	min-width:500px;
+}

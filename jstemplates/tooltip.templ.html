@@ -1,0 +1,25 @@
+<!-- start tooltip -->
+<TABLE>
+	{{for ~getFormattedFields(#data)}}
+		{{if key=='__MULTI_TABLE__ '}}
+		{{else}}
+		<tr >
+		 	<td><b>{{>key}}</b>:</td><td> {{>value}}</td>
+		 </tr>
+		 {{/if}}
+	{{/for}}
+</TABLE>
+{{if  #data.__MULTI_TABLE__ }}
+	{{for #data.__MULTI_TABLE__ }}
+		<br>
+		<TABLE>
+			{{for ~getFormattedFields(#data)}}
+				<tr >
+					<td><b>{{>key}}</b>:</td><td> {{>value}}</td>
+				 </tr>
+			{{/for}}
+		</TABLE>
+	{{/for}}
+{{/if}}
+	
+<!-- end tooltip -->

@@ -1,0 +1,232 @@
+.dataTables_length {
+    float: left;
+    padding: 0 15px;
+}
+.tabschemabddFormClass{
+	width:950px;
+	position:relative;
+	margin-left: 100px;
+
+}
+
+.tabschemabddFormClass table.dataTable td {
+	padding: 4px 10px 5px;
+	max-width: 100px;
+}
+
+
+.tabgrpidfClass{
+width:500px;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+}
+.TabfluxdomSelectClass{
+width:500px;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+}
+
+.tabfluxdomgrpFltClass{
+width:1000px;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+}
+.TabfluxdestLnkClass{
+width:900px;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.tabgrpidfClass {
+width:1200px;
+position:relative;
+margin-left: auto;
+margin-right: auto;
+}
+.tabgrpidfClass ui-widget-header{
+	
+}
+
+.errorlist{
+color: #F00;
+font-weight: bold;
+background: #F5F5DC;
+}
+
+
+.folderdiv {
+border-bottom: 1px solid;
+width: 100%;
+color: #00F;
+padding-bottom: 5px;
+}
+
+
+.folderdiv  < a{
+				color:blue;
+				background: #F5F5DC;
+				font-weight: bold;
+}
+
+
+#id_TabmailForm .onMouseTDPopup{
+	top:-50px;
+	 min-height: 100px;
+	 margin-bottom: 5px;
+}
+
+.SelectItem{
+	border: 1px solid #008000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 45px;
+	margin-right: 3px;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+fieldset {
+/* required to properly style form 
+   elements on WebKit based browsers */
+  -webkit-appearance: none;
+  
+  width : 100%;
+  border: 2px solid #F1E5E5;
+  margin: 0;
+  
+  font-family: inherit;
+  font-size: 90%;
+  
+  -moz-box-sizing: border-box;
+  /*box-sizing: border-box;*/
+  margin-left: 1px;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+
+
+
+
+
+/* This is just to make the example nicer */
+
+input[type=email]{
+  -webkit-appearance: none;
+
+  width: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* This is our style for the invalid fields */
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  padding: 0;
+  padding: 1px 13px 2px 2px;
+  clear:left;
+  
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display:none;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+
+
+
+/*
+slideform classes
+*/
+
+.slideform {
+	float: left;
+	display: block;
+	position: relative;
+	padding: 5px;
+	/*width: 420px;*/
+	height: 73px;
+}
+
+.slideform_ {
+	display: block;
+	position: absolute;
+	padding: 2px;
+	height: 55px;
+	width: 10000px;
+}
+
+.formchoice{
+	float: left;
+	display: block;
+	position: relative;
+
+	border: 1px solid;
+	padding: 3px;
+	margin: 10px;
+	
+	background: #6495ED;
+	color: #FFFAF0;
+	opacity: 0.4;
+}
+.formchoice:hover{
+	opacity: 0.8;
+}
+
+.formchoice.select{
+	border: 3px solid;
+	background: #3D4D8B;
+	opacity: 1;
+}
+.formchoice-title{
+	float: left;
+	display: block;
+	position: relative;
+	line-height: 25px;
+}
+.formchoice-icon{
+	float: left;
+	display: block;
+	position: relative;
+	height:20px;
+	padding:5px;
+}
